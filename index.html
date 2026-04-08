@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mother Nature Coffee — Premium ekspresy do kawy Jettino, sprzęt espresso oraz rozwiązania kawowe dla domu i biznesu.">
+  <meta name="keywords" content="ekspresy do kawy, Jettino, espresso, kawa premium, Mother Nature Coffee">
+  <title>Mother Nature Coffee — Premium ekspresy Jettino</title>
+  <link rel="canonical" href="https://mothernaturecoffee.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mother Nature Coffee — Premium ekspresy Jettino">
+  <meta property="og:description" content="Odkryj naszą starannie wyselekcjonowaną kolekcję ekspresów Jettino. Od kompaktowych modeli domowych po rozwiązania komercyjne.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-bg.jpg">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mother Nature Coffee",
+    "url": "https://mothernaturecoffee.com",
+    "description": "Ekspresy Jettino klasy premium i rozwiązania kawowe najwyższej jakości.",
+    "contactPoint": { "@type": "ContactPoint", "email": "info@mothernaturecoffee.com" }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==================== LOADING SCREEN ==================== -->
+  <div id="loading-screen" class="loading-screen" aria-hidden="true">
+    <div class="loading-logo">Mother Nature</div>
+    <div class="loading-bar"><div class="loading-bar-inner"></div></div>
+  </div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="nav" role="navigation" aria-label="Nawigacja główna">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">Mother Nature</a>
+      <ul class="nav-links">
+        <li><a href="#hero">Strona główna</a></li>
+        <li><a href="#machines">Ekspresy</a></li>
+        <li><a href="#partners">Partnerzy</a></li>
+        <li><a href="#about">O nas</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Przełącz menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav">
+    <div class="mobile-nav-inner">
+      <ul class="mobile-nav-links">
+        <li><a href="#hero">Strona główna</a></li>
+        <li><a href="#machines">Ekspresy</a></li>
+        <li><a href="#partners">Partnerzy</a></li>
+        <li><a href="#about">O nas</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <header id="hero" class="hero">
+    <div class="hero-bg">
+      <img src="assets/images/hero-bg.jpg" alt="Ekspres do kawy premium" width="1920" height="1080">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">Rozwiązania kawowe premium</p>
+      <h1>Sztuka doskonałej kawy</h1>
+      <p>Odkryj naszą starannie wyselekcjonowaną kolekcję ekspresów Jettino — zaprojektowanych z myślą o perfekcji i elegancji.</p>
+      <div class="hero-buttons">
+        <a href="#machines" class="btn btn-primary">Zobacz ekspresy</a>
+        <a href="#about" class="btn btn-outline">Nasza historia</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== PARTNER LOGOS ==================== -->
+  <section id="partners" class="partners-strip fade-in">
+    <div class="partners-inner">
+      <span class="partner-logo">Costadoro</span>
+      <span class="partner-logo">Varesina</span>
+      <span class="partner-logo">Carraro</span>
+      <span class="partner-logo">Monin</span>
+      <span class="partner-logo">Dilmah</span>
+      <span class="partner-logo">La Via del Tè</span>
+    </div>
+  </section>
+
+  <!-- ==================== PRODUCT CATALOG ==================== -->
+  <section id="machines" class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-tag">Nasza kolekcja</p>
+        <h2 class="section-title">Ekspresy Jettino</h2>
+        <p class="section-desc">Od kompaktowych ekspresów domowych po profesjonalne rozwiązania — znajdź idealny model dla siebie.</p>
+      </div>
+
+      <div class="catalog-controls fade-up">
+        <div class="search-box">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="product-search" placeholder="Szukaj ekspresów..." aria-label="Szukaj produktów">
+        </div>
+        <div id="filter-tabs" class="filter-tabs" role="tablist" aria-label="Filtruj według kategorii"></div>
+      </div>
+
+      <div id="product-grid" class="product-grid stagger-children"></div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT / FEATURES ==================== -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-tag">Dlaczego my</p>
+        <h2 class="section-title">Stworzone dla miłośników kawy</h2>
+        <p class="section-desc">Każdy ekspres Jettino powstaje z precyzją i pasją do idealnej filiżanki kawy.</p>
+      </div>
+      <div class="features-grid stagger-children">
+        <div class="feature-card fade-up">
+          <div class="feature-icon">☕</div>
+          <h3 class="feature-title">Perfekcyjna ekstrakcja</h3>
+          <p class="feature-desc">Profesjonalne systemy ciśnienia zapewniają bogate, zbalansowane espresso z idealną cremą za każdym razem.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Elegancki design</h3>
+          <p class="feature-desc">Minimalistyczna estetyka łączy się z solidną konstrukcją. Każdy ekspres to ozdoba Twojej przestrzeni.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon">🔧</div>
+          <h3 class="feature-title">Trwałość</h3>
+          <p class="feature-desc">Wnętrze ze stali nierdzewnej i komponenty premium objęte kompleksową gwarancją.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon">🌿</div>
+          <h3 class="feature-title">Ekologiczne</h3>
+          <p class="feature-desc">Energooszczędna praca i materiały nadające się do recyklingu. Dobra kawa nie musi szkodzić planecie.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon">🤝</div>
+          <h3 class="feature-title">Wsparcie ekspertów</h3>
+          <p class="feature-desc">Dedykowany zespół serwisowy z szybką reakcją. Instalacja, szkolenie i serwis w cenie.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon">🌍</div>
+          <h3 class="feature-title">Globalni partnerzy</h3>
+          <p class="feature-desc">Współpracujemy z markami światowej klasy jak Costadoro, Carraro i Dilmah.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT / CTA ==================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-tag">Skontaktuj się z nami</p>
+        <h2 class="section-title">Gotowy na lepszą kawę?</h2>
+        <p class="section-desc">Wyposażasz kawiarnię, biuro lub kuchnię? Pomożemy dobrać idealny ekspres.</p>
+        <br>
+        <a href="mailto:info@mothernaturecoffee.com" class="btn btn-dark">Skontaktuj się</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Mother Nature</div>
+          <p class="footer-desc">Rozwiązania kawowe premium oparte na ekspresach Jettino i najlepszych markach kawy na świecie.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Ekspresy</h4>
+          <ul class="footer-links">
+            <li><a href="#machines">Espresso</a></li>
+            <li><a href="#machines">Kapsułkowe</a></li>
+            <li><a href="#machines">Profesjonalne</a></li>
+            <li><a href="#machines">Młynki</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Partnerzy</h4>
+          <ul class="footer-links">
+            <li><a href="#">Costadoro</a></li>
+            <li><a href="#">Varesina</a></li>
+            <li><a href="#">Carraro</a></li>
+            <li><a href="#">Monin</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Firma</h4>
+          <ul class="footer-links">
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#">Polityka prywatności</a></li>
+            <li><a href="#">Warunki korzystania</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mother Nature Coffee. Wszelkie prawa zastrzeżone.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== PRODUCT MODAL ==================== -->
+  <div id="product-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Szczegóły produktu">
+    <div id="modal-content" class="modal"></div>
+  </div>
+
+  <!-- Scripts: products data first, then app logic remember! -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
