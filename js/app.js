@@ -133,7 +133,7 @@
           <h3 class="product-card-name">${p.name}</h3>
           <p class="product-card-desc">${p.description}</p>
           <div class="product-card-footer">
-            <span class="product-card-price">€${p.price.toLocaleString()}</span>
+            <span class="product-card-price">${p.price.toLocaleString()} zł</span>
             <span class="product-card-action">Szczegóły <span aria-hidden="true">→</span></span>
           </div>
         </div>
@@ -218,7 +218,7 @@
           <div class="modal-body">
             ${product.badge ? `<span class="modal-badge">${product.badge}</span>` : ''}
             <h2 class="modal-name">${product.name}</h2>
-            <div class="modal-price">€${product.price.toLocaleString()}</div>
+            <div class="modal-price">${product.price.toLocaleString()} zł</div>
             <p class="modal-desc">${product.description}</p>
             <div class="modal-specs">
               <h3>Specyfikacja</h3>
